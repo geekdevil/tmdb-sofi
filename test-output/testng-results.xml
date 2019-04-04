@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="3" ignored="0" total="5" passed="2">
+  <reporter-output>
+    <line>
+      <![CDATA[Starting test]]>
+    </line>
+    <line>
+      <![CDATA[Starting test]]>
+    </line>
+    <line>
+      <![CDATA[Starting test]]>
+    </line>
+    <line>
+      <![CDATA[Starting test]]>
+    </line>
+    <line>
+      <![CDATA[Starting test]]>
+    </line>
+    <line>
+      <![CDATA[Attach TestNG log file]]>
+    </line>
+    <line>
+      <![CDATA[Attach TestNG log file]]>
+    </line>
+    <line>
+      <![CDATA[Attach TestNG log file]]>
+    </line>
+    <line>
+      <![CDATA[Attach TestNG log file]]>
+    </line>
+    <line>
+      <![CDATA[Attach TestNG log file]]>
+    </line>
+  </reporter-output>
+  <suite name="TMDB" duration-ms="8054" started-at="2019-04-04T03:56:40Z" finished-at="2019-04-04T03:56:48Z">
+    <groups>
+      <group name="TMDB">
+        <method signature="SearchTests.searchForFightClub()[pri:0, instance:testCases.SearchTests@46185a1b]" name="searchForFightClub" class="testCases.SearchTests"/>
+        <method signature="SearchTests.searchForTheGodFatherII()[pri:0, instance:testCases.SearchTests@46185a1b]" name="searchForTheGodFatherII" class="testCases.SearchTests"/>
+      </group> <!-- TMDB -->
+      <group name="INTENTIONAL_ERROR">
+        <method signature="SearchTests.searchForGodfatherIIWithWrongAdultStatus()[pri:0, instance:testCases.SearchTests@46185a1b]" name="searchForGodfatherIIWithWrongAdultStatus" class="testCases.SearchTests"/>
+        <method signature="SearchTests.searchForGodfatherIIWithWrongDate()[pri:0, instance:testCases.SearchTests@46185a1b]" name="searchForGodfatherIIWithWrongDate" class="testCases.SearchTests"/>
+        <method signature="SearchTests.searchForGodfatherInGodFatherII()[pri:0, instance:testCases.SearchTests@46185a1b]" name="searchForGodfatherInGodFatherII" class="testCases.SearchTests"/>
+      </group> <!-- INTENTIONAL_ERROR -->
+    </groups>
+    <test name="TMDB tests" duration-ms="8054" started-at="2019-04-04T03:56:40Z" finished-at="2019-04-04T03:56:48Z">
+      <class name="testCases.SearchTests">
+        <test-method status="FAIL" signature="searchForGodfatherIIWithWrongAdultStatus()[pri:0, instance:testCases.SearchTests@46185a1b]" name="searchForGodfatherIIWithWrongAdultStatus" duration-ms="7957" started-at="2019-04-04T03:56:40Z" description="Searches for a movie with a non-matching adult status" finished-at="2019-04-04T03:56:48Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+JSON path results[0].adult doesn't match.
+Expected: <true>
+  Actual: false
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+JSON path results[0].adult doesn't match.
+Expected: <true>
+  Actual: false
+
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)
+at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:77)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:60)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:235)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:471)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$7.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:643)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)
+at io.restassured.internal.ResponseSpecificationImpl.content(ResponseSpecificationImpl.groovy:265)
+at io.restassured.specification.ResponseSpecification$content$9.callCurrent(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:248)
+at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:268)
+at methods.Validation.findValueIn(Validation.java:100)
+at methods.Validation.validateMovieAdultStatus(Validation.java:83)
+at testCases.SearchTests.search(SearchTests.java:26)
+at testCases.SearchTests.searchForGodfatherIIWithWrongAdultStatus(SearchTests.java:72)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[Starting test]]>
+            </line>
+            <line>
+              <![CDATA[Attach TestNG log file]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- searchForGodfatherIIWithWrongAdultStatus -->
+        <test-method status="PASS" signature="searchForTheGodFatherII()[pri:0, instance:testCases.SearchTests@46185a1b]" name="searchForTheGodFatherII" duration-ms="7957" started-at="2019-04-04T03:56:40Z" description="Searches for the movie The Godfather: Part II" finished-at="2019-04-04T03:56:48Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Starting test]]>
+            </line>
+            <line>
+              <![CDATA[Attach TestNG log file]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- searchForTheGodFatherII -->
+        <test-method status="PASS" signature="searchForFightClub()[pri:0, instance:testCases.SearchTests@46185a1b]" name="searchForFightClub" duration-ms="7957" started-at="2019-04-04T03:56:40Z" description="Searches for the movie Fight Club" finished-at="2019-04-04T03:56:48Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Starting test]]>
+            </line>
+            <line>
+              <![CDATA[Attach TestNG log file]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- searchForFightClub -->
+        <test-method status="FAIL" signature="searchForGodfatherIIWithWrongDate()[pri:0, instance:testCases.SearchTests@46185a1b]" name="searchForGodfatherIIWithWrongDate" duration-ms="7957" started-at="2019-04-04T03:56:40Z" description="Searches for a movie with a non-matching date" finished-at="2019-04-04T03:56:48Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+JSON path results[0].release_date doesn't match.
+Expected: 2004-12-20
+  Actual: 1974-12-20
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+JSON path results[0].release_date doesn't match.
+Expected: 2004-12-20
+  Actual: 1974-12-20
+
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)
+at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:77)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:60)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:235)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:471)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$7.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:643)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)
+at io.restassured.internal.ResponseSpecificationImpl.content(ResponseSpecificationImpl.groovy:265)
+at io.restassured.specification.ResponseSpecification$content$9.callCurrent(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:248)
+at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:268)
+at methods.Validation.findValueIn(Validation.java:100)
+at methods.Validation.validateMovieReleaseDate(Validation.java:71)
+at testCases.SearchTests.search(SearchTests.java:25)
+at testCases.SearchTests.searchForGodfatherIIWithWrongDate(SearchTests.java:66)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[Starting test]]>
+            </line>
+            <line>
+              <![CDATA[Attach TestNG log file]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- searchForGodfatherIIWithWrongDate -->
+        <test-method status="FAIL" signature="searchForGodfatherInGodFatherII()[pri:0, instance:testCases.SearchTests@46185a1b]" name="searchForGodfatherInGodFatherII" duration-ms="7957" started-at="2019-04-04T03:56:40Z" description="Searches for a movie with a non-matching name" finished-at="2019-04-04T03:56:48Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+JSON path results[2].title doesn't match.
+Expected: The Godfather
+  Actual: The Godfather: Part III
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+JSON path results[2].title doesn't match.
+Expected: The Godfather
+  Actual: The Godfather: Part III
+
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)
+at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:77)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:60)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:235)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:471)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$7.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:643)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:52)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:154)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)
+at io.restassured.internal.ResponseSpecificationImpl.content(ResponseSpecificationImpl.groovy:265)
+at io.restassured.specification.ResponseSpecification$content$11.callCurrent(Unknown Source)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:52)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:154)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:190)
+at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:248)
+at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:268)
+at methods.Validation.findValueIn(Validation.java:100)
+at methods.Validation.validateMovieTitle(Validation.java:60)
+at testCases.SearchTests.search(SearchTests.java:23)
+at testCases.SearchTests.searchForGodfatherInGodFatherII(SearchTests.java:60)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[Starting test]]>
+            </line>
+            <line>
+              <![CDATA[Attach TestNG log file]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- searchForGodfatherInGodFatherII -->
+      </class> <!-- testCases.SearchTests -->
+    </test> <!-- TMDB tests -->
+  </suite> <!-- TMDB -->
+</testng-results>
