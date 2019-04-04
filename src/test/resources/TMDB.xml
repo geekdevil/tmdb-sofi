@@ -1,13 +1,12 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="TMDB" parallel="methods" >
-    <test name="TMDB tests" preserve-order="true" parallel="methods" thread-count="10"  >
+    <test name="The Movie DB SoFi test assignment" preserve-order="true" parallel="methods" thread-count="10"  >
         <groups>
             <define name="TMDB_Tests">
                 <include name="TMDB"/>
             </define>
         </groups>
         <classes>
-            <!-- <class name="TestCases.APIResponding" /> -->
             <class name="TestCases.SearchTests" />
         </classes>
     </test>
