@@ -1,4 +1,4 @@
-package methods;
+package Methods;
 
 /**
  * Enumeration of common html types

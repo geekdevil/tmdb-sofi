@@ -1,10 +1,10 @@
-package testCases;
+package TestCases;
 
 import io.restassured.http.ContentType;
-import methods.*;
-
 import org.testng.Reporter;
 import org.testng.annotations.Test;
+
+import Methods.*;
 
 /**
  * This class provides the ability to search for a movie by name, release date, and it's adult status, and will let you

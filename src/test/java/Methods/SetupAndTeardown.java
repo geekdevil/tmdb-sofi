@@ -1,4 +1,4 @@
-package methods;
+package Methods;
 
 import io.restassured.response.ValidatableResponse;
 import org.apache.log4j.BasicConfigurator;

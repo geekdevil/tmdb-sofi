@@ -1,4 +1,4 @@
-package methods;
+package Methods;
 
 import org.testng.Reporter;
 import ru.yandex.qatools.allure.annotations.Attachment;

@@ -1,4 +1,4 @@
-package methods;
+package Methods;
 
 /**
  * Created by spyderweiss on 7/17/17.

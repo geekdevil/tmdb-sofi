@@ -1,4 +1,4 @@
-package methods;
+package Methods;
 
 /**
  * Stores the endpoints that need to be tested.
